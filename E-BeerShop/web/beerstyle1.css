@@ -1,0 +1,647 @@
+body {
+    text-align: center;
+    font-family: 'Luckiest Guy', cursive;
+    margin: 0;
+}
+.wrapper {
+    background-color: #f0f0eb;
+    box-shadow: 0 -15px 150px 70px #d4d4cc inset;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 100px;
+}
+.logo {
+    margin: 0 auto;
+    max-height: 200px;
+    margin-top: 60px;
+}
+.form-login {
+    padding: 30px 50px;
+    width: 190px;
+    margin: auto;
+    text-align: center;
+    border: 0.2px solid black;
+    box-shadow: 0 0 1px 1px black, 0 0 50px 1px #d4d4cc inset;
+    border-radius: 5px;
+}
+.form-admin {
+    padding: 30px 50px;
+    width: 400px;
+    margin: auto;
+    text-align: center;
+    border: 0.2px solid black;
+    box-shadow: 0 0 1px 1px black, 0 0 50px 1px #d4d4cc inset;
+    border-radius: 5px;
+}
+.textboxes-admin {
+    text-align: center;
+    border: 0.4px solid black;
+    box-shadow: 0 0 5px 1px #d4d4cc inset;
+    border-radius: 7px;
+    padding: 6px;
+    width: 300px;
+}
+.loginerror {
+    border: 0.2px solid black;
+    margin: auto;
+    margin-top: 230px;
+    width: 450px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 1px 1px black, 0 0 50px 1px #d4d4cc inset;
+    border-radius: 5px;
+}
+.labels {
+    color: black;
+    margin: 0 auto;
+    padding: 5px;
+}
+.textboxes {
+    text-align: center;
+    border: 0.4px solid black;
+    box-shadow: 0 0 5px 1px #d4d4cc inset;
+    border-radius: 7px;
+    padding: 6px;
+    width: 175px;
+}
+.submit-button {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 17px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    background-color: black;
+    border: 0.6px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    width: 140px;
+}
+.submit-button:hover {
+    background-color: #fabd0f;
+    color: white;
+}
+.register {
+    color: black;
+    text-decoration: none;
+}
+.register:hover {
+    text-decoration: underline; 
+}
+.goBack {
+    color: black;
+    text-decoration: none;
+}
+.goBack:hover {
+    text-decoration: underline;
+    color: #fabd0f;
+}
+.beers-wrapper {
+    background-color: #f0f0eb;
+    min-height: 100%;
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+.beers-logo {
+    height: 100px;
+    position: absolute;
+    left: 200px;
+}
+.header {
+    height: 100px;
+}
+.beers-nav {
+    background-color: black;
+    height: 130px;
+    overflow: hidden;
+}
+.welcome {
+    color: #fabd0f;
+}
+.welcome-basket {
+    color: #fabd0f;
+    font-size: 45px;
+}
+.header-menu {
+    position: absolute;
+    right: 200px;
+}
+.list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: left;
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #f0f0eb;
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 45px;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 5px;
+    z-index: 20;
+}
+.dropdown-content-cart {
+    display: none;
+    position: absolute;
+    right: -35px;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 5px;
+    z-index: 20;
+}
+.dropdown-content a, .dropdown-content-cart a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover, .dropdown-content-cart a:hover {
+    background-color: #fabd0f;
+    border-radius: 5px;
+}
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content-cart {
+    display: block;
+}
+.header-menu-image {
+    display: block;
+}
+.header-menu-span {
+    padding: 0;
+    margin: 0;
+}
+.total-beers-count {
+    position: absolute;
+    right: 9px;
+    top: 5px;
+    min-width: 23px;
+    min-height: 23px;
+    font-size: 19px;
+    border-radius: 10px;
+    background-color: #fabd0f;
+}
+.adminPage-newBeer {
+    float: left;
+    margin-left: 180px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.adminPage-quantity, .adminPage-delite {   
+    float: right;
+    margin-right: 180px;
+}
+.beers-main {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.beer {
+    background-color: white;
+    float: left;
+    height: 490px;
+    width: 300px;
+    border: 1px solid #c3c3c3;
+    border-radius: 15px;
+    margin: 20px;
+    position: relative;
+}
+.beer-image {
+    height: 220px;
+    margin-top: 35px;
+}
+.add-div-nula {
+    opacity: 0.5;
+}
+.add-div, .add-div-nula {
+    background: #fabd0f;
+    border-radius: 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    width: 250px;
+    height: 45px;
+}
+.addbtn, .addbtn-nula {
+    font-size: 19px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 14px;
+    left: 95px;
+}
+.beer-price {
+    position: absolute;
+    bottom: 81px;
+    left: 143px;
+    font-size: 30px;
+}
+.beer-name {
+    position: absolute;
+    top: 280px;
+    left: 35px;
+}
+.beer-style {
+    position: absolute;
+    top: 320px;
+    left: 35px;
+    font-size: 18px;
+}
+.beer-top {
+    color: black;
+}
+.unavailable {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    background-color: #fabd0f;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+.p-unavailable {
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top: 30px;
+    left: 1px;
+    transform: rotate(25deg);
+}
+.beers-nav-onebeer {
+    background-color: #fabd0f;
+}
+.beers-nav-onebeer-image {
+    max-height: 70px; 
+    margin: 5px;
+}
+.onebeer {
+   font-family: 'Yanone Kaffeesatz', sans-serif;
+   position: relative;
+   height: 600px;
+   z-index: 10;
+}
+.beer-name-onebeer {
+    font-size: 35px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+.beer-description-onebeer {
+    font-size: 25px;
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    width: 300px;
+    text-align: left;
+}
+.beer-brewery-onebeer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    font-size: 20px;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+    width: 300px;
+    text-align: left;
+    border-top: 1px solid #d4d4cc;
+    border-bottom: 1px solid #d4d4cc;
+}
+.beer-country-onebeer {
+    width: 150px;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    position: absolute;
+    top: 288px;
+    left: 200px;
+    border-bottom: 1px solid #d4d4cc;
+}
+.beer-style-onebeer {
+    width: 150px;
+    font-size: 20px;
+    text-align: left;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    position: absolute;
+    top: 288px;
+    left: 351px;
+    border-bottom: 1px solid #d4d4cc;
+    border-left: 1px solid #d4d4cc;
+}
+.beer-alcohol-onebeer {
+    width: 150px;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    position: absolute;
+    top: 323px;
+    left: 200px;
+    border-bottom: 1px solid #d4d4cc;
+}
+.beer-packing-onebeer {
+    width: 150px;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 5px;
+    position: absolute;
+    top: 323px;
+    left: 351px;
+    border-bottom: 1px solid #d4d4cc;
+    border-left: 1px solid #d4d4cc;
+}
+.beer-image-onebeer {
+    position: absolute;
+    top: 100px;
+    right: 500px;
+    max-height: 450px;
+}
+.add-div-onebeer-quan {
+    opacity: 0.5;
+}
+.add-div-onebeer, .add-div-onebeer-quan {
+    background: #fabd0f;
+    border-radius: 30px;
+    position: absolute;
+    top: 460px;
+    right: 240px;
+    width: 250px;
+    height: 45px;
+}
+.addbtn-onebeer {
+    font-size: 19px;
+    color: black;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 14px;
+    left: 93px;
+}
+.unavailable-onebeer {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    background-color: #fabd0f;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    position: absolute;
+    top: 35px;
+    right: 480px;
+}
+.footer {
+    background-color: black;
+    margin-top: 35px;
+    height: 160px;
+    clear: both;
+    position: relative;
+}
+.footer-image {
+    max-height: 80px;
+    position: absolute;
+    left: 150px;
+    top: 40px;
+}
+.footer-p {
+    color: white;
+    position: absolute;
+    top: 52px;
+    left: 400px;
+}
+.footer-follow-p {
+    color: #fabd0f;
+    font-size: 25px;
+    padding: 0px;
+    margin: 0 0 5px 0;
+}
+.footer-facebook, .footer-instagram, .footer-twitter {
+    max-height: 40px;
+}
+.footer-instagram {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer-follow {
+    position: absolute;
+    top: 35px;
+    right: 200px;
+}
+.cart {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: white;
+    width: 1000px;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+.cart-div {
+    position: relative;
+    overflow: hidden;
+}
+.continueShopping {
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 20px;
+    right: 60px;
+}
+.cart-beer {
+    border: 1px solid #d4d4cc;
+    margin: 20px 30px;
+    border-radius: 10px;
+    position: relative;
+    height: 100px;
+}
+.cart-image {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.cart-name {
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 130px;
+}
+.cart-price {
+    font-size: 20px;
+    position: absolute;
+    top: 40px;
+    left: 480px;
+}
+.beers-nav-cart {
+    background-color: black;
+    height: 130px;
+    position: relative;
+    z-index: 10;
+}
+.welcome-basket-cart {
+    color: #fabd0f;
+    font-size: 45px;
+    position: absolute;
+    top: 33px;
+    right: 560px;
+    margin: 0px;
+    padding: 0px;
+}
+.welcome-image-chart {
+    position: absolute;
+    top: 40px;
+    left: 560px;
+    max-height: 40px;
+}
+.add-remove-button {
+    position: absolute;
+    top: 30px;
+    right: 230px;
+    border: 2px solid #fabd0f;
+    height: 34px;
+    width: 100px;
+    border-radius: 20px;
+}
+.minusButton, .plusButton {
+    max-height: 30px;
+}
+.minusButton {
+    position: absolute;
+    top: 2px; 
+    left: 2px;
+}
+.plusButton {
+    position: absolute;
+    top: 2px; 
+    right: 2px;
+}
+.beer-cartQuantiy {
+    position: absolute;
+    top: 9px;
+    left: 44px;
+}
+.total-onebeer {
+    position: absolute;
+    top: 33px;
+    right: 90px;
+    font-size: 30px;
+}
+.total {
+    font-size: 30px;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 120px;
+}
+.confirm-order {
+    width: 350px;
+    height: 50px;
+    background-color: #fabd0f;
+    border: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.order-div {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: white;
+    margin: 40px auto 0px auto;
+    width: 1000px;
+    border-radius: 20px;
+    height: 150px;
+    position: relative;
+}
+.order-div-name {
+    position: absolute;
+    top: 60px;
+    left: 70px;
+    font-size: 30px;
+}
+.order-div-addresstel {
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+.order-div-address {
+    width: 300px;
+}
+.order-div-tel {
+    width: 274px;
+}
+.order-buy {
+    width: 230px;
+    height: 50px;
+    background-color: #fabd0f;
+    border: 0px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50px;
+    right: 70px;
+    cursor: pointer;
+}
+.close-button {
+    max-height: 17px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+.admin-main {
+    height: 900px;
+}
+.orders-table {
+    margin: 35px auto;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    min-height: 300px;
+}
+.orders-table-table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 5px;
+    
+}
+.tr {
+    background-color: white;
+    height: 60px;
+    
+}
+.tr:first-child {
+    background-color: #fabd0f;
+}
+.tr td {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+}
